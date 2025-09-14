@@ -56,12 +56,13 @@ section {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid var(--secondary-color);
     object-fit: cover;
     margin-bottom: 20px;
+    object-position: center 25%;
 }
 
 #hero h1 {
@@ -793,4 +794,60 @@ footer {
 .article-content .btn-secondary:hover {
     background-color: var(--secondary-color);
     color: var(--light-text-color);
+}
+
+/* --- Style dla Sekcji Kontaktowej --- */
+
+#kontakt {
+    text-align: center; /* Wyśrodkowanie całej zawartości */
+    background: linear-gradient(135deg, var(--primary-color) 0%, #3c5a75 100%); /* Subtelny gradient tła */
+    color: var(--light-text-color); /* Jasny tekst dla kontrastu */
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+/* Nadpisanie domyślnych kolorów dla nagłówka i ikon w tej sekcji */
+#kontakt h2,
+#kontakt h2 i {
+    color: var(--light-text-color);
+}
+
+#kontakt p {
+    max-width: 600px; /* Ograniczenie szerokości tekstu dla lepszej czytelności */
+    margin: 0 auto 40px auto; /* Wyśrodkowanie i dodanie dolnego marginesu */
+    font-size: 1.1rem;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie kart w poziomie */
+    gap: 25px; /* Odstęp między kartami */
+    flex-wrap: wrap; /* Zawijanie kart na mniejszych ekranach */
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Przezroczyste tło */
+    padding: 15px 25px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--light-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Delikatna ramka */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-card:hover {
+    background-color: var(--secondary-color); /* Zmiana koloru po najechaniu */
+    transform: translateY(-5px); /* Efekt lekkiego uniesienia */
+}
+
+.contact-icon {
+    font-size: 1.8rem; /* Większa ikona */
+    margin-right: 15px; /* Odstęp od tekstu */
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    font-weight: bold;
 }
