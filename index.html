@@ -1,10 +1,176 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-g">
-    <title>WWW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Kowalski - Software Test Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-</body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Jan Kowalski</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#o-mnie" class="nav-link">O Mnie</a></li>
+                <li class="nav-item"><a href="#doswiadczenie" class="nav-link">Doświadczenie</a></li>
+                <li class="nav-item"><a href="#projekty" class="nav-link">Projekty</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <header id="hero">
+        <div class="hero-container">
+            <img src="https://via.placeholder.com/150" alt="Twoje zdjęcie profilowe" class="profile-photo">
+            <h1>Jan Kowalski</h1>
+            <h2>Software Test Manager</h2>
+            <p class="tagline">Buduję i prowadzę wysokowydajne zespoły QA, które gwarantują najwyższą jakość oprogramowania.</p>
+            <div class="hero-buttons">
+                <a href="#kontakt" class="btn">Kontakt</a>
+                <a href="/cv.pdf" class="btn btn-secondary" target="_blank">Pobierz CV (PDF)</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/twoj-profil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/twoj-profil" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="o-mnie" class="container">
+            <br>
+            <h2><i class="fas fa-user"></i> O Mnie</h2>
+            <p>
+                Jestem doświadczonym menedżerem testów z ponad 10-letnim doświadczeniem w branży IT. Moją pasją jest zapewnianie jakości na każdym etapie cyklu życia oprogramowania. Specjalizuję się w tworzeniu strategii testów, optymalizacji procesów QA oraz wdrażaniu automatyzacji. Wierzę, że kluczem do sukcesu jest silny, zmotywowany zespół i bliska współpraca z deweloperami oraz biznesem.
+            </p>
+        </section>
+
+        <section id="kompetencje" class="container">
+            <h2><i class="fas fa-cogs"></i> Kluczowe Kompetencje</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Zarządzanie Testami</h3>
+                    <ul>
+                        <li>Strategia i Planowanie Testów</li>
+                        <li>Zarządzanie Ryzykiem</li>
+                        <li>Kierowanie Zespołem i Mentoring</li>
+                        <li>Raportowanie i Metryki QA</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Metodologie i Standardy</h3>
+                    <ul>
+                        <li>Agile (Scrum, Kanban)</li>
+                        <li>ISTQB, TMMi</li>
+                        <li>Behavior-Driven Development (BDD)</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Narzędzia i Technologie</h3>
+                    <ul>
+                        <li>Jira, TestRail, Xray</li>
+                        <li>Selenium, Cypress, Playwright</li>
+                        <li>Postman, JMeter</li>
+                        <li>Git, Jenkins, Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="doswiadczenie" class="container">
+            <br>
+            <h2><i class="fas fa-briefcase"></i> Doświadczenie Zawodowe</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Senior Test Manager</h3>
+                    <p class="timeline-details"><strong>Tech Solutions Inc.</strong> | 01.2020 – Obecnie</p>
+                    <ul>
+                        <li>Zarządzałem 8-osobowym zespołem QA, zwiększając pokrycie testami automatycznymi z 30% do 75%.</li>
+                        <li>Wdrożyłem strategię "Shift-Left", co zredukowało liczbę krytycznych błędów na produkcji o 60%.</li>
+                        <li>Odpowiadałem za budżet działu QA i optymalizację kosztów narzędzi testowych.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Test Lead</h3>
+                    <p class="timeline-details"><strong>Innovate Software</strong> | 06.2016 – 12.2019</p>
+                    <ul>
+                        <li>Prowadziłem 4-osobowy zespół w projekcie dla klienta z branży finansowej.</li>
+                        <li>Zaprojektowałem i zaimplementowałem od zera framework do testów automatycznych w Cypress.</li>
+                        <li>Skróciłem czas trwania testów regresji o 40% dzięki automatyzacji.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projekty" class="container">
+            <br>
+            <h2><i class="fas fa-project-diagram"></i> Kluczowe Projekty</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Wdrożenie strategii QA dla platformy e-commerce</h3>
+                    <p><strong>Problem:</strong> Wysoka liczba błędów po wdrożeniach, negatywnie wpływająca na sprzedaż.</p>
+                    <p><strong>Działania:</strong> Audyt procesów, implementacja testów automatycznych E2E, wprowadzenie testów wydajnościowych.</p>
+                    <p><strong>Wynik:</strong> Redukcja krytycznych błędów na produkcji o 85% i wzrost stabilności platformy.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Optymalizacja Procesu Testów w Aplikacji Mobilnej</h3>
+                    <p><strong>Problem:</strong> Długi cykl wydawniczy (6 tygodni) spowodowany czasochłonną regresją manualną.</p>
+                    <p><strong>Działania:</strong> Wprowadzenie farmy urządzeń mobilnych w chmurze i automatyzacja kluczowych scenariuszy.</p>
+                    <p><strong>Wynik:</strong> Skrócenie cyklu wydawniczego do 2 tygodni i zwiększenie pewności wdrożeń.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="certyfikaty" class="container">
+            <br>
+            <h2><i class="fas fa-certificate"></i> Certyfikaty i Edukacja</h2>
+            <ul>
+                <li><strong>ISTQB Advanced Level</strong> - Test Manager</li>
+                <li><strong>ISTQB Foundation Level</strong></li>
+                <li><strong>Certified Agile Tester (CAT)</strong></li>
+                <li><strong>Inżynier Informatyki</strong> - Politechnika Wrocławska</li>
+            </ul>
+        </section>
+
+        <section id="kontakt" class="container">
+            <br>
+            <h2><i class="fas fa-envelope"></i> Kontakt</h2>
+            <p>Chętnie odpowiem na pytania lub porozmawiam o możliwościach współpracy. Zapraszam do kontaktu!</p>
+            <form action="https://formspree.io/f/TWOJ_UNIKALNY_KOD" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Twoje imię" required>
+                <input type="email" name="email" placeholder="Twój e-mail" required>
+                <textarea name="message" rows="5" placeholder="Twoja wiadomość" required></textarea>
+                <button type="submit" class="btn">Wyślij wiadomość</button>
+            </form>
+            <p>Możesz też napisać bezpośrednio na: <a href="mailto:twoj.email@example.com">twoj.email@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jan Kowalski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+    </body>
 </html>
