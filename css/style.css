@@ -1,0 +1,796 @@
+/* --- Globalne Style --- */
+:root {
+    --primary-color: #2c3e50; /* Ciemny granat */
+    --secondary-color: #3498db; /* Jasny niebieski */
+    --background-color: #ecf0f1; /* Jasnoszary */
+    --text-color: #34495e; /* Ciemnoszary tekst */
+    --light-text-color: #ffffff;
+    --card-bg-color: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h2 i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+section {
+    background-color: var(--card-bg-color);
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* --- Sekcja Hero --- */
+#hero {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: var(--light-text-color);
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--light-text-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--light-text-color);
+    color: var(--primary-color);
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: var(--light-text-color);
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* --- Sekcja Kompetencji --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%233498db" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* --- Sekcja Doświadczenia (Timeline) --- */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--secondary-color);
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--background-color);
+}
+
+.timeline-details {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* --- Sekcja Projektów --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: #fdfdfd;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* --- Formularz Kontaktowy --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* --- Stopka --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+/* --- Responsywność --- */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+}
+
+/* --- Style dla Menu Nawigacyjnego --- */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.nav-logo {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.nav-link {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--light-text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Style dla poprawnego odstępu od góry --- */
+#hero {
+    padding-top: 130px; /* Zwiększony padding, aby treść nie chowała się pod menu */
+}
+
+
+/* --- Responsywność Menu --- */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%; /* Menu jest schowane poza ekranem */
+        top: 70px; /* Menu pojawia się pod paskiem nawigacji */
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        left: 0; /* Menu wjeżdża na ekran */
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: block; /* Hamburger widoczny tylko na mobile */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* --- Dodaj na końcu pliku style.css --- */
+
+/* Styl dla aktywnego linku w menu */
+.nav-link.active {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Styl dla nagłówka na podstronach (np. Blog) */
+.page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 120px 20px 40px 20px; /* Większy padding na górze, by nie chować się pod menu */
+}
+
+.page-header h1 {
+    color: var(--light-text-color);
+    font-size: 2.8rem;
+}
+
+/* Dodatkowy styl, by treść artykułu nie chowała się pod menu */
+.page-content {
+    padding-top: 70px; /* Wysokość menu */
+}
+
+/* --- Dodaj na końcu pliku style.css --- */
+
+/* --- Style dla dwukolumnowego układu bloga --- */
+
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap; /* Pozwala na zawijanie na mniejszych ekranach */
+    gap: 30px; /* Odstęp między kolumnami */
+}
+
+.blog-sidebar {
+    flex: 1; /* Zajmuje 1 część dostępnego miejsca */
+    min-width: 280px; /* Minimalna szerokość bocznego panelu */
+    background-color: var(--card-bg-color);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: fit-content; /* Wysokość dopasowuje się do zawartości */
+}
+
+.blog-main-content {
+    flex: 3; /* Zajmuje 3 części, jest szersza */
+}
+
+.blog-sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    margin-bottom: 15px;
+}
+
+.article-list a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.article-list a:hover {
+    background-color: #f0f3f4;
+    transform: translateX(5px);
+}
+
+.article-list h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.post-date-small {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+/* Dostosowanie siatki wpisów, aby lepiej pasowała do nowej kolumny */
+#blog-posts .blog-grid {
+    grid-template-columns: 1fr; /* Teraz zawsze jedna kolumna w głównej części */
+}
+
+/* --- Responsywność dla układu bloga --- */
+@media (max-width: 992px) {
+    .blog-layout {
+        flex-direction: column; /* Zmień na układ jednokolumnowy */
+    }
+}
+
+/* --- Dodaj/Zaktualizuj na końcu pliku style.css --- */
+
+/* Styl dla aktywnego linku w menu głównym */
+.nav-link.active {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Styl dla nagłówka na podstronach (np. Blog) */
+.page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 120px 20px 40px 20px; /* Większy padding na górze, by nie chować się pod menu */
+    margin-bottom: 0; /* Usuń domyślny margines sekcji */
+}
+
+.page-header h1 {
+    color: var(--light-text-color);
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+/* Dostosowanie głównej zawartości artykułu (dla pojedynczego pliku artykułu) */
+.page-content {
+    padding-top: 100px; /* Wysokość menu + trochę marginesu */
+    margin-bottom: 20px;
+}
+
+/* --- Style dla dwukolumnowego układu bloga --- */
+
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap; /* Pozwala na zawijanie na mniejszych ekranach */
+    gap: 30px; /* Odstęp między kolumnami */
+    padding-top: 40px; /* Dodatkowy padding na górze, aby odsunąć od header'a */
+}
+
+.blog-sidebar {
+    flex: 0 0 280px; /* Fixed width for sidebar, no shrinking or growing */
+    background-color: var(--card-bg-color);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: fit-content; /* Wysokość dopasowuje się do zawartości */
+    position: sticky; /* Sticky sidebar */
+    top: 100px; /* Odsunięcie od góry (wysokość menu + margines) */
+    max-height: calc(100vh - 120px); /* Ogranicza wysokość i pozwala na scrollowanie w sidebarze */
+    overflow-y: auto; /* Scrollbar jeśli zawartość jest za długa */
+}
+
+.blog-main-content {
+    flex: 1; /* Zajmuje resztę dostępnego miejsca */
+    min-width: 0; /* Ważne, aby zawartość mogła się zmniejszać */
+}
+
+.blog-sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    margin-bottom: 5px; /* Mniejszy odstęp między elementami listy */
+}
+
+.article-list a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 12px 10px; /* Większy padding dla lepszej klikalności */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    line-height: 1.3; /* Lepsze odstępy w tekście */
+}
+
+.article-list a:hover {
+    background-color: #e0e5e8; /* Jaśniejszy kolor tła na hover */
+    transform: translateX(3px); /* Mniejszy efekt przesunięcia */
+}
+
+.article-list a.active-article {
+    background-color: var(--secondary-color); /* Aktywny artykuł */
+    color: var(--light-text-color);
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-list a.active-article h4,
+.article-list a.active-article .post-date-small {
+    color: var(--light-text-color); /* Biały tekst dla aktywnego linku */
+}
+
+
+.article-list h4 {
+    margin: 0 0 3px 0;
+    font-size: 1.05rem;
+    color: var(--primary-color);
+}
+
+.post-date-small {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+/* Nowy styl dla kart artykułów na głównej liście bloga */
+.blog-post-full-card {
+    background-color: var(--card-bg-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 25px; /* Odstęp między kartami */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post-full-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blog-post-full-card h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.blog-post-full-card .post-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    display: block; /* Upewnij się, że data jest w oddzielnym wierszu */
+}
+
+.blog-post-full-card p {
+    margin-bottom: 20px;
+}
+
+.blog-post-full-card .btn {
+    margin-top: 10px;
+}
+
+
+/* --- Responsywność dla układu bloga --- */
+@media (max-width: 992px) {
+    .blog-layout {
+        flex-direction: column; /* Zmień na układ jednokolumnowy */
+        padding-top: 20px;
+    }
+
+    .blog-sidebar {
+        position: static; /* Już nie sticky na mobile */
+        max-height: none; /* Usuń ograniczenie wysokości */
+        overflow-y: visible; /* Usuń scrollbar */
+        width: 100%; /* Rozciągnij na całą szerokość */
+        order: -1; /* Umieść sidebar na górze w widoku mobilnym */
+    }
+
+    .blog-main-content {
+        width: 100%;
+    }
+}
+
+/* Opcjonalnie: dostosowanie marginesu górnego dla blog.html jeśli na mobile */
+@media (max-width: 768px) {
+    .page-header {
+        padding-top: 100px; /* Mniejszy padding na górze dla mobile */
+    }
+}
+
+/* --- Style dla Pojedynczego Artykułu --- */
+
+/* Główny kontener artykułu dla lepszego zarządzania stylami */
+.article-content {
+    background-color: var(--card-bg-color);
+    padding: 30px 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Tytuł główny artykułu */
+.article-content h1 {
+    font-size: 2.5rem; /* Większy, bardziej wyrazisty tytuł */
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+/* Data publikacji pod tytułem */
+.article-content .post-date {
+    display: block;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #7f8c8d; /* Szary, delikatny kolor */
+    border-bottom: 1px solid var(--background-color);
+    padding-bottom: 20px;
+}
+
+/* Wszystkie paragrafy w artykule */
+.article-content p {
+    font-size: 1.1rem;
+    line-height: 1.7; /* Zwiększony odstęp między liniami dla lepszej czytelności */
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Nagłówki H2 wewnątrz artykułu */
+.article-content h2 {
+    font-size: 1.8rem;
+    margin-top: 40px; /* Większy odstęp od poprzedniego paragrafu */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    line-height: 1.3;
+}
+
+/* Nagłówki H3 wewnątrz artykułu */
+.article-content h3 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+
+/* Wszystkie linki w treści artykułu */
+.article-content a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px dotted transparent;
+    transition: all 0.3s ease;
+}
+
+.article-content a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px dotted var(--primary-color);
+}
+
+/* Style dla list (wypunktowanych i numerowanych) */
+.article-content ul,
+.article-content ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.article-content li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Styl dla cytatów (blockquote) */
+.article-content blockquote {
+    border-left: 5px solid var(--secondary-color);
+    margin: 30px 0;
+    padding: 15px 25px;
+    background-color: #f8f9fa;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Style dla bloków kodu (pre, code) */
+.article-content pre {
+    background-color: #2d3748; /* Ciemne tło */
+    color: #e2e8f0; /* Jasny tekst */
+    padding: 20px 25px; /* Delikatnie większy padding boczny */
+    border-radius: var(--border-radius);
+    overflow-x: auto; /* Scrollbar jeśli kod jest za długi */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Styl dla kodu w linii */
+.article-content code {
+    background-color: #e0e5e8; /* Jasnoszare tło dla kodu w linii */
+    color: #34495e; /* Ciemniejszy tekst dla kontrastu */
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Zapobiega zawijaniu kodu w linii */
+}
+
+/* --- Poprawka dla bloków kodu, aby zachować entery --- */
+
+/* Ta reguła dotyczy TYLKO tagu <code>, który jest wewnątrz <pre> */
+.article-content pre code {
+    /* Nakazuje <code>, aby dziedziczył właściwość white-space od swojego rodzica, czyli <pre>. 
+       To przywraca łamanie wierszy. */
+    white-space: inherit; 
+    
+    /* Resetujemy style, które były przeznaczone dla kodu w linii */
+    background-color: transparent; /* Usuwamy tło, bo <pre> już je ma */
+    color: inherit; /* Dziedziczymy kolor tekstu z <pre> */
+    padding: 0; /* Usuwamy padding, bo <pre> już go ma */
+    font-size: inherit; /* Dziedziczymy rozmiar czcionki */
+}
+
+/* Przycisk powrotu */
+.article-content .btn-secondary {
+    display: inline-block;
+    margin-top: 30px;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.article-content .btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+}

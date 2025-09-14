@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tytuł Artykułu - Jan Kowalski</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Jan Kowalski</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#o-mnie" class="nav-link">O Mnie</a></li>
+                <li class="nav-item"><a href="index.html#doswiadczenie" class="nav-link">Doświadczenie</a></li>
+                <li class="nav-item"><a href="index.html#projekty" class="nav-link">Projekty</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <article class="article-content">
+                <h1>5 Narzędzi Open Source, Które Zmieniły Mój Workflow w QA</h1>
+                <p class="post-date">14 września 2025</p>
+                
+                <p>To jest treść Twojego artykułu. Możesz tu używać paragrafów, list i nagłówków. Wyglądają teraz znacznie lepiej!</p>
+                
+                <h2>Narzędzie 1: Playwright</h2>
+                <p>Opis narzędzia i dlaczego jest świetne. Możesz dodać link do projektu na GitHub, który będzie teraz ładnie sformatowany: <a href="https://github.com/microsoft/playwright" target="_blank">Repozytorium Playwright na GitHub</a>.</p>
+                
+                <h3>Kluczowe funkcje Playwright:</h3>
+                <ul>
+                    <li>Auto-waits</li>
+                    <li>Cross-browser support</li>
+                    <li>Test Generator</li>
+                </ul>
+
+                <blockquote>To jest przykład cytatu. Służy do wyróżnienia ważnej myśli lub wypowiedzi.</blockquote>
+
+                <p>Możesz też wstawić fragment kodu, np. <code>npm init playwright@latest</code>, lub cały blok:</p>
+<pre><code>// example.spec.ts
+
+import { test, expect } from '@playwright/test';
+
+test('has title', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+  await expect(page).toHaveTitle(/Playwright/);
+});
+</code></pre>
+                
+                <a href="/blog.html" class="btn btn-secondary">← Wróć do bloga</a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jan Kowalski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
+
+</body>
+</html>
